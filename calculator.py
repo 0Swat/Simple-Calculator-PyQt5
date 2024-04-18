@@ -36,7 +36,7 @@ class MyCalculator(QMainWindow):
             ["0", 100, 300, size, size, "append", "#808080"],
             [".", 200, 300, size, size, "append", "#808080"],
             ["=", 300, 300, size, size, "evaluate", "#808080"],
-            ["C", 0, 400, size, size, "clear", "#ff7f0e"],
+            ["C", 0, 400, size, size, "clear", "#ff7f0e"]
         ]
  
         self.button = []
@@ -87,4 +87,5 @@ def window():
     win.show()
     sys.exit(app.exec_())
 
-window()
+if __name__ == '__main__':
+    window()
